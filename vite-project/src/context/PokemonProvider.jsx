@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import handleFetch from '../utils/handleFetch';
-
+import PokemonContent from "./PokemonContext";
 // TODO: Import the PokemonContext
 
 const starterPokemon = [
@@ -31,13 +31,26 @@ const PokemonProvider = ({ children }) => {
     const [allPokemon, setAllPokemon] = useState(starterPokemon);
 
     // TODO: use useEffect to fetch data from the local JSON server (remember to start JSON server!)
+    useEffect(() => {
+        const doFetch = async () => {
+            const [data, error] = await handleFetch('http://localhost:4000/pokemon');
+            if (data) setAllPokemon(data);
+            if (error) setError(error);
+        };
+        doFetch()
+    }, [])
+    console.log("Provider allPokemon:", allPokemon);
 
     // TODO: Add values to be included in the context here
-    let contextValues = {}
+    const contextValues = {
+        allPokemon
+    }
 
     // TODO: Wrap the {children} in the PokemonContext.Provider and provide the values above
     return (
-        { children }
+        <PokemonContent.Provider value={contextValues}>
+            {children}
+        </PokemonContent.Provider>
     )
 }
 
