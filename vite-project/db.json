@@ -83,6 +83,20 @@
       "hp": 60,
       "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
       "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/12.png"
+    },
+    {
+      "name": "ljdf",
+      "front": "sdkfn",
+      "back": "salkdfn",
+      "hp": "aldkfsbn",
+      "id": 13
+    },
+    {
+      "name": "oaidhf",
+      "front": "dsfal",
+      "back": "fasdljb",
+      "hp": "asdfoi",
+      "id": 14
     }
   ]
 }
