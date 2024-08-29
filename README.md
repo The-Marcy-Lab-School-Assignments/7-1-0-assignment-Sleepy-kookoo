@@ -45,12 +45,12 @@ Your goal is to meet at least 75% of these requirements to complete the assignme
 Score: 0/4
 
 **React Fundamentals**
-- [ ] `useState` is used to manage state. This is done in the Context Provider file at least once.
+- [x] `useState` is used to manage state. This is done in the Context Provider file at least once.
 - [x] `useEffect` is used to perform an asynchronous fetch call. This is done in the Context Provider file at least once.
-- [ ] The form must be a controlled component. The `value` prop of the `input` elements should be set to a state value and `onChange` should update that state value.
+- [x] The form must be a controlled component. The `value` prop of the `input` elements should be set to a state value and `onChange` should update that state value.
 - [x] The project uses React Context.
 - [x] The project uses `useContext` at least once
-Score: 3/5
+Score: 5/5
 
 **Miscellaneous**
 - [x] Props are extracted in child components using destructuring
